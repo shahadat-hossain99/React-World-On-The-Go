@@ -1,6 +1,7 @@
 import React from "react";
 import { use } from "react";
 import Country from "../Country/Country";
+import "./countries.css";
 
 const Countries = ({ CountriesPromise }) => {
   //   console.log(CountriesPromise);
@@ -15,9 +16,11 @@ const Countries = ({ CountriesPromise }) => {
     <div>
       <h2>Countries : {countries.length}</h2>
 
-      {countries.map((country) => (
-        <Country key={country.cca3.cca3} country={country}></Country>
-      ))}
+      <div className="countries">
+        {countries.map((country) => (
+          <Country key={country.cca3.cca3} country={country}></Country>
+        ))}
+      </div>
     </div>
   );
 };
