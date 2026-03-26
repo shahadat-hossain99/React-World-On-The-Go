@@ -21,6 +21,7 @@ Provides information about all countries, specific country by code or name, or b
   - [`/api/alpha/116`](#apialpha116)
   - [`/api/lang/english`](#apilangenglish)
   - [`/api/name/bangladesh`](#apinamebangladesh)
+- [Table of Contents](#table-of-contents-1)
 
 ---
 
@@ -191,5 +192,25 @@ Here are example shapes of JSON responses you may get (fields may vary):
   }
 ]
 ```
+
+---
+
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [APIs Used](#apis-used)
+- [Endpoints](#endpoints)
+  - [`/api/all`](#apiall)
+  - [`/api/alpha/{code}`](#apialphacode)
+  - [`/api/lang/{language}`](#apilanglanguage)
+  - [`/api/name/{name}`](#apinamename)
+- [Usage](#usage)
+- [Getting Started](#getting-started)
+- [Example Responses](#example-responses)
+  - [`/api/all`](#apiall-1)
+  - [`/api/alpha/116`](#apialpha116)
+  - [`/api/lang/english`](#apilangenglish)
+  - [`/api/name/bangladesh`](#apinamebangladesh)
+- [Table of Contents](#table-of-contents-1)
 
 ---
