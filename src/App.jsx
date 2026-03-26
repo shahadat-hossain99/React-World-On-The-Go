@@ -1,16 +1,19 @@
-// import { useState } from "react";
-
+import { Suspense } from "react";
 import "./App.css";
 import Countries from "./Components/countries/countries";
+
+const CountriesPromise = fetch(
+  "https://openapi.programming-hero.com/api/all",
+).then((res) => res.json());
 
 function App() {
   // const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1>React World On THe GO.....</h1>
-
-      <Countries></Countries>
+      <Suspense fallback={<p>Countries Loading...</p>}>
+        <Countries CountriesPromise={CountriesPromise}></Countries>
+      </Suspense>
     </>
   );
 }
